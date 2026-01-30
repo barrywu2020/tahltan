@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pay with PayPal</title>
+</head>
+<body>
+  <h2>Buy Science Kit - $49.99</h2>
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+    <input type="hidden" name="cmd" value="_xclick">
+    <input type="hidden" name="business" value="youremail@example.com">
+    <input type="hidden" name="item_name" value="Science Kit">
+    <input type="hidden" name="amount" value="49.99">
+    <input type="hidden" name="currency_code" value="USD">
+    <input type="submit" value="Pay with PayPal">
+  </form>
+</body>
+</html>

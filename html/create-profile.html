@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Journal</title>
+</head>
+<body>
+    <h1>Create an<span style="color:orange"> Amazing</span> Profile</h1>
+
+    <form action="/api/v1/journals" method="post" style="text-align:right">
+        <div style="color:rgb(42, 14, 168)">
+            <label for="Last Name">Last Name</label>
+            <input id="Last Name" type="text" name="Last Name" placeholder="Jibson">
+            <label for="First Name">First Name</label>
+            <input id="First Name" type="text" name="First Name" placeholder="John">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="barrywu@gmail.com">
+            <label for="Phone Number">Phone Number</label>
+            <input id="Phone Number" type="text" name="Phone Number" placeholder="604-123-4567">
+        </div>
+        
+        <div style="color:red">
+            <label for="Country">Country</label>
+            <select id="Country" Name="Country">
+                <option value="Canada">Canada</option>
+                <option value="China">China</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Zambia">Zambia</option>
+            </select>
+        </div>
+        
+        <label for="Marriage Status" style="color:orange">Marriage Statue</label>
+        <select id="Mariage Status" Name="Marriage Status">
+            <option value="Single">Single</option>
+            <option value="Married">Married</option>
+            <option value="Divorced">Divorced</option>
+            <option value="Widow">Widow</option>
+        </select>
+
+        <div>
+            <label for="comments">Comments</label>
+            <textarea id="comments" name="comment" placeholder="your comments are here" rows="5" cols="20"></textarea>
+        </div>
+        
+        <div>
+            <label for="User Name">User Name</label>
+            <input id="User Name" type="text" name="User Name" placeholder="Johnway">
+            <label for="Pass Word">Pass Word</label>
+            <input id="Pass Word" type="password" name="Pass Word" placeholder="Jkb1934!">
+        </div>
+        
+
+        <div style="color:red">
+            <label for="Purpose">Purpose</label>
+            <input id="Purpose-1" type="checkbox" name="Business">
+            <label for="purpose-1">Business</label>
+            <input id="Purpose-2" type="checkbox" name="Charity">
+            <label for="purpose-2">Charity</label>
+            <input id="Purpose-3" type="checkbox" name="Employment">
+            <label for="purpose-3">Employment</label>
+            <input id="Purpose-4" type="checkbox" name="Service">
+            <label for="purpose-4">Service</label>
+        </div>
+        
+        <div>
+            <label for="Age Range">Age</label>
+            <input id="group-1" type="radio" name="age" value="young adult">
+            <label for="group-1">16-18</label>
+            <input id="Group-2" type="radio" name="age" value="adult">
+            <label for="group-2">19-65</label>
+            <input id="Group-3" type="radio" name="age" value="senior">
+            <label for="group-3">66 and older</label>
+        </div>
+        
+        <div>
+            <button type="submit" style="color:green">Submit</button>
+            <button type="Reset" style="color:rgb(205, 50, 184)">Reset</button>
+        </div>
+    </form>
+    
+</body>
+</html>
